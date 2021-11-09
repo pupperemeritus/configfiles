@@ -84,7 +84,7 @@ set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set autochdir
-
+set autoread
 if empty(glob('~/.vim/autoload/plug.vim'))
 silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -108,6 +108,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'farmergreg/vim-lastplace'
   Plug 'Raimondi/delimitMate'
   Plug 'rust-lang/rust.vim'
+  Plug 'djoshea/vim-autoread'
 call plug#end()
 colorscheme onedark
 let g:lightline = {
