@@ -1,0 +1,220 @@
+version: 3
+profiles: []
+hotkeys:
+  toggle-window:
+    - Ctrl-Space
+  copy-current-path: []
+  ctrl-c:
+    - Ctrl-C
+  copy:
+    - Ctrl-Shift-C
+  paste:
+    - Ctrl-Shift-V
+    - Shift-Insert
+  select-all:
+    - Ctrl-Shift-A
+  clear: []
+  zoom-in:
+    - Ctrl-=
+    - Ctrl-Shift-=
+  zoom-out:
+    - Ctrl--
+    - Ctrl-Shift--
+  reset-zoom:
+    - Ctrl-0
+  home:
+    - Home
+  end:
+    - End
+  previous-word:
+    - Ctrl-Left
+  next-word:
+    - Ctrl-Right
+  delete-previous-word:
+    - Ctrl-Backspace
+  delete-next-word:
+    - Ctrl-Delete
+  search:
+    - Ctrl-Shift-F
+  pane-focus-all:
+    - Ctrl-Shift-I
+  restart-telnet-session: []
+  restart-ssh-session: []
+  launch-winscp: []
+  settings:
+    - Ctrl-,
+  serial:
+    - Alt-K
+  restart-serial-session: []
+  new-window:
+    - Ctrl-Shift-N
+  new-tab:
+    - Ctrl-Shift-T
+  profile: {}
+  profile-selectors: {}
+  toggle-fullscreen:
+    - F11
+  close-tab:
+    - Ctrl-Shift-W
+  reopen-tab:
+    - Ctrl-Shift-T
+  toggle-last-tab: []
+  rename-tab:
+    - Ctrl-Shift-R
+  next-tab:
+    - Ctrl-Shift-Right
+    - Ctrl-Tab
+  previous-tab:
+    - Ctrl-Shift-Left
+    - Ctrl-Shift-Tab
+  move-tab-left:
+    - Ctrl-Shift-PageUp
+  move-tab-right:
+    - Ctrl-Shift-PageDown
+  rearrange-panes:
+    - Ctrl-Shift
+  duplicate-tab: []
+  tab-1:
+    - Alt-1
+  tab-2:
+    - Alt-2
+  tab-3:
+    - Alt-3
+  tab-4:
+    - Alt-4
+  tab-5:
+    - Alt-5
+  tab-6:
+    - Alt-6
+  tab-7:
+    - Alt-7
+  tab-8:
+    - Alt-8
+  tab-9:
+    - Alt-9
+  tab-10:
+    - Alt-0
+  tab-11: []
+  tab-12: []
+  tab-13: []
+  tab-14: []
+  tab-15: []
+  tab-16: []
+  tab-17: []
+  tab-18: []
+  tab-19: []
+  tab-20: []
+  split-right:
+    - Ctrl-Shift-E
+  split-bottom:
+    - Ctrl-Shift-D
+  split-left: []
+  split-top: []
+  pane-nav-right:
+    - Ctrl-Alt-Right
+  pane-nav-down:
+    - Ctrl-Alt-Down
+  pane-nav-up:
+    - Ctrl-Alt-Up
+  pane-nav-left:
+    - Ctrl-Alt-Left
+  pane-nav-previous:
+    - Ctrl-Alt-[
+  pane-nav-next:
+    - Ctrl-Alt-]
+  pane-maximize:
+    - Ctrl-Alt-Enter
+  close-pane: []
+  switch-profile:
+    - Ctrl-Alt-T
+  profile-selector:
+    - Ctrl-Shift-T
+terminal:
+  searchOptions: {}
+  colorScheme:
+    name: Argonaut edited
+    foreground: '#fffaf4'
+    background: '#000000'
+    cursor: '#ff0018'
+    colors:
+      - '#232323'
+      - '#ff000f'
+      - '#8ce10b'
+      - '#ffb900'
+      - '#008df8'
+      - '#6d43a6'
+      - '#00d8eb'
+      - '#ffffff'
+      - '#444444'
+      - '#ff2740'
+      - '#abe15b'
+      - '#ffd242'
+      - '#0092ff'
+      - '#9a5feb'
+      - '#67fff0'
+      - '#ffffff'
+  fontSize: 18
+  cursor: beam
+  customColorSchemes:
+    - name: Argonaut
+      foreground: '#fffaf4'
+      background: '#000000'
+      cursor: '#ff0018'
+      colors:
+        - '#232323'
+        - '#ff000f'
+        - '#8ce10b'
+        - '#ffb900'
+        - '#008df8'
+        - '#6d43a6'
+        - '#00d8eb'
+        - '#ffffff'
+        - '#444444'
+        - '#ff2740'
+        - '#abe15b'
+        - '#ffd242'
+        - '#0092ff'
+        - '#9a5feb'
+        - '#67fff0'
+        - '#ffffff'
+    - name: Argonaut edited
+      foreground: '#fffaf4'
+      background: '#000000'
+      cursor: '#ff0018'
+      colors:
+        - '#232323'
+        - '#ff000f'
+        - '#8ce10b'
+        - '#ffb900'
+        - '#008df8'
+        - '#6d43a6'
+        - '#00d8eb'
+        - '#ffffff'
+        - '#444444'
+        - '#ff2740'
+        - '#abe15b'
+        - '#ffd242'
+        - '#0092ff'
+        - '#9a5feb'
+        - '#67fff0'
+        - '#ffffff'
+  ligatures: true
+  background: colorScheme
+  bell: audible
+  frontend: xterm-webgl
+  autoOpen: true
+ssh: {}
+configSync:
+  parts: {}
+clickableLinks: {}
+appearance:
+  frame: native
+  theme: Altair
+pluginBlacklist: []
+enableAnalytics: false
+enableWelcomeTab: false
+profileDefaults: {}
+electronFlags:
+  - - force_discrete_gpu
+    - '0'
+recoverTabs: false
