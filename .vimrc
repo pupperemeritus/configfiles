@@ -1,6 +1,7 @@
+" An example for a vimrc file.
 "
 " Maintainer:   pupperemeritus
-" Last change:  2021 26th December
+" Last change:  2021 Dec 26
 "
 " To use it, copy it to
 "              for Unix:  ~/.vimrc
@@ -108,7 +109,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'rust-lang/rust.vim'
   Plug 'djoshea/vim-autoread'
   Plug 'tpope/vim-fugitive'
-  
+  Plug 'tpope/vim-commentary'
+  Plug 'xavierd/clang_complete'
 call plug#end()
 colorscheme onedark
 let g:lightline = {
