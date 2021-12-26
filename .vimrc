@@ -111,6 +111,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-commentary'
   Plug 'xavierd/clang_complete'
+  Plug 'sheerun/vim-polyglot'
 call plug#end()
 colorscheme onedark
 let g:lightline = {
@@ -125,4 +126,3 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
