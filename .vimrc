@@ -112,6 +112,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-commentary'
   Plug 'xavierd/clang_complete'
   Plug 'sheerun/vim-polyglot'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 colorscheme onedark
 let g:lightline = {
