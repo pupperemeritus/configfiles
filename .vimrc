@@ -113,10 +113,14 @@ call plug#begin('~/.vim/plugged')
   Plug 'xavierd/clang_complete'
   Plug 'sheerun/vim-polyglot'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'danilo-augusto/vim-afterglow'
+  Plug 'tyrannicaltoucan/vim-deep-space'
 call plug#end()
-colorscheme onedark
+set termguicolors
+set background=dark
+colorscheme deep-space
 let g:lightline = {
-  \ 'colorscheme': 'powerlineish',
+  \ 'colorscheme': 'deep_space',
   \ }
 nnoremap <C-n> :NERDTreeToggle<CR>
 set statusline+=%#warningmsg#
