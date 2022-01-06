@@ -23,7 +23,7 @@ truncation_symbol = "repo: "
 
 # Before all the version info (python, nodejs, php, etc.)
 [git_status]
-style = "green"
+style = "blue"
 ahead = "⇡${count}"
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
 behind = "⇣${count}"
