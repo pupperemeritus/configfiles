@@ -118,10 +118,11 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 set termguicolors
 set background=dark
-colorscheme deep-space
+colorscheme deep-space 
 let g:lightline = {
   \ 'colorscheme': 'deep_space',
   \ }
+let g:airline_theme='deep_space'
 nnoremap <C-n> :NERDTreeToggle<CR>
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
