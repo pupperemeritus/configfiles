@@ -118,6 +118,7 @@ alias please='sudo'
 alias tb='nc termbin.com 9999'
 alias paru="paru --bottomup"
 alias condaspy='conda activate spyder-env'
+alias spyderconda='conda activate spyder-env && spyder'
 # Replace yay with paru
 [ ! -x /usr/bin/yay ] && [ -x /usr/bin/paru ] && alias yay='paru'
 

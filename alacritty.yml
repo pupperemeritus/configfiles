@@ -18,8 +18,8 @@ window:
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
   dimensions:
-    columns: 160
-    lines: 50
+    columns: 0
+    lines: 0
       
   # Window position (changes require restart)
   #
@@ -60,7 +60,7 @@ window:
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
   #startup_mode: Windowed
-  startup_mode: Windowed
+  startup_mode: Maximized
    #Window title
   title: Le Terminale
   dynamic_title: false
@@ -75,7 +75,7 @@ window:
   #
   # Override the variant of the GTK theme. Commonly supported values are `dark` and `light`.
   # Set this to `None` to use the default theme variant.
-  gtk_theme_variant: sweet
+  gtk_theme_variant: dark
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -88,7 +88,7 @@ scrolling:
 # Font configuration
 font:
   # Normal (roman) font face
-  size: 10
+  size: 14
   normal:
     # Font family
     #
@@ -159,9 +159,10 @@ font:
 draw_bold_text_with_bright_colors: true
 
 # Colors (Tomorrow Night)
-#colors:
+
+colors:
   # Default colors
- # primary:
+  #primary:
   #  background: #ff00ff
    # foreground: #c5c8c6
 
@@ -177,9 +178,9 @@ draw_bold_text_with_bright_colors: true
   #
   # Colors which should be used to draw the terminal cursor. If these are
   # unset, the cursor color will be the inverse of the cell color.
-  #cursor:
-  #  text: '#000000'
-  #  cursor: '#ffffff'
+  cursor:
+    text: '#000000'
+    cursor: '#ffffff'
 
   # Vi mode cursor colors
   #
@@ -195,43 +196,43 @@ draw_bold_text_with_bright_colors: true
   # background is unset, selection color will be the inverse of the cell colors.
   # If only text is unset the cell text color will remain the same.
   #selection:
-  #  text: '#eaeaea'
+  text: '#eaeaea'
         #background: '#404040'
         #background: #b294bb
   # Normal colors
-  #normal:
-  #  black:   '#1d1f21'
-  #  red:     '#cc6666'
-  #  green:   '#b5bd68'
-  #  yellow:  '#f0c674'
-  #  blue:    '#81a2be'
-  #  magenta: '#b294bb'
-  #  cyan:    '#8abeb7'
-  #  white:   '#c5c8c6'
+  normal:
+    black:   '#000000'
+    red:     '#ff0000'
+    green:   '#00ff00'
+    yellow:  '#ffff00'
+    blue:    '#81a2be'
+    magenta: '#cc00cc'
+    cyan:    '#00ffff'
+    white:   '#ffffff'
 
   # Bright colors
   #bright:
   #  black:   '#666666'
-  #  red:     '#d54e53'
-  #  green:   '#b9ca4a'
-  #  yellow:  '#e7c547'
-  #  blue:    '#7aa6da'
-  #  magenta: '#c397d8'
-  #  cyan:    '#70c0b1'
+  #  red:     '#19cb00'
+  #  green:   '#cecb00'
+  #  yellow:  '#0d73cc'
+  #  blue:    '#cb1ed1'
+  #  magenta: '#0dcdcd'
+  #  cyan:    '#dddddd'
   #  white:   '#eaeaea'
 
   # Dim colors
   #
   # If the dim colors are not set, they will be calculated automatically based
   # on the `normal` colors.
-  #dim:
-  #  black:   '#131415'
-  #  red:     '#864343'
-  #  green:   '#777c44'
-  #  yellow:  '#9e824c'
-  #  blue:    '#556a7d'
-  #  magenta: '#75617b'
-  #  cyan:    '#5b7d78'
+  #  dim:
+  #    black:   '#131415'
+  #    red:     '#23fd00'
+  # green:   '#fffd00'
+  # yellow:  '#1a8fff'
+  # blue:    '#556a7d'
+  # magenta: '#14ffff'
+  #  cyan:    '#ffffff'
   #  white:   '#828482'
 
   # Indexed Colors
@@ -265,16 +266,16 @@ draw_bold_text_with_bright_colors: true
 #   - Linear
 #
 # Specifying a `duration` of `0` will disable the visual bell.
-#visual_bell:
-#  animation: EaseOutExpo
-#  duration: 0
-#  color: '#ffffff'
+visual_bell:
+  animation: EaseOutExpo
+  duration: 1
+  color: '#ffffff'
 
  #Background opacity
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.7
+background_opacity:  0.9
 
 #selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
@@ -646,8 +647,8 @@ save_to_clipboard: true
   #print_events: false
 colors:
  primary:
-   background: '#010937'
-  # foreground: '0xedc29a'
+   background: '#000000'
+   foreground: '#ffffff'
  cursor:
     cursor:     '0xedc29a'
  
