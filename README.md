@@ -11,3 +11,5 @@ Configs include
 1. Kitty 
 1. KDE keybindings
 1. Tabby
+1. Starship
+1. Zsh
