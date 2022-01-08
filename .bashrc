@@ -84,6 +84,7 @@ alias helpme='cht.sh --shell'
 alias please='sudo'
 alias tb='nc termbin.com 9999'
 alias spyderconda='conda activate spyder-env && spyder'
+alias cambright='v142-ctl -d /dev/video0 --set-ctrl=brightness='
 # Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns `pacman -Qtdq`'
 

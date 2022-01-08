@@ -119,6 +119,7 @@ alias tb='nc termbin.com 9999'
 alias paru="paru --bottomup"
 alias condaspy='conda activate spyder-env'
 alias spyderconda='conda activate spyder-env && spyder'
+alias cambright='v142-ctl -d /dev/video0 --set-ctrl=brightness='
 # Replace yay with paru
 [ ! -x /usr/bin/yay ] && [ -x /usr/bin/paru ] && alias yay='paru'
 

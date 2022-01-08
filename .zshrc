@@ -221,6 +221,7 @@ fi
 unset __conda_setup
 alias spyderconda='conda activate spyder-env && spyder'
 alias condaspy="conda activate spyder-env"
+alias cambright='v142-ctl -d /dev/video0 --set-ctrl=brightness='
 neofetch
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
