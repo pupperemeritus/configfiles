@@ -115,11 +115,12 @@ call plug#begin('~/.vim/plugged')
   Plug 'danilo-augusto/vim-afterglow'
   Plug 'tyrannicaltoucan/vim-deep-space'
   Plug 'psliwka/vim-smoothie'
+  Plug 'bronson/vim-trailing-whitespace'
   Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()
 set termguicolors
 set background=dark
-colorscheme deep-space 
+colorscheme deep-space
 let g:lightline = {
   \ 'colorscheme': 'deep_space',
   \ }
