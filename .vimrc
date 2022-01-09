@@ -109,12 +109,13 @@ call plug#begin('~/.vim/plugged')
   Plug 'rust-lang/rust.vim'
   Plug 'djoshea/vim-autoread'
   Plug 'tpope/vim-fugitive'
-  Plug 'tpope/vim-commentary'
   Plug 'xavierd/clang_complete'
   Plug 'sheerun/vim-polyglot'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'danilo-augusto/vim-afterglow'
   Plug 'tyrannicaltoucan/vim-deep-space'
+  Plug 'psliwka/vim-smoothie'
+  Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()
 set termguicolors
 set background=dark
