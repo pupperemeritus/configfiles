@@ -47,12 +47,14 @@ augroup END
 " compatible.
 " The ! means the package won't be loaded right away but when plugins are
 " loaded during initialization.
+
 if has('syntax') && has('eval')
   packadd! matchit
 endif
 set number
 filetype plugin on
 syntax on
+
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
@@ -62,6 +64,7 @@ set ruler              			            " Show the cursor position all the time
 set cmdheight=2                         " More space for displaying messages
 set iskeyword+=-                      	" treat dash separated words as a word text object"
 set mouse=a                             " Enable your mouse
+
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
 set t_Co=256                           " Support 256 colors
@@ -70,6 +73,7 @@ set tabstop=4                           " Insert 2 spaces for a tab
 set shiftwidth=4                        " Change the number of space characters inserted for indentation
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
 set expandtab                           " Converts tabs to spaces
+
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set laststatus=0                        " Always display the status line
@@ -77,6 +81,7 @@ set number                              " Line numbers
 set cursorline                          " Enable highlighting of the current line
 set showtabline=2                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
+
 set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
 set updatetime=50                      " Faster completion
@@ -85,6 +90,7 @@ set formatoptions=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set autochdir
 set nocompatible
+
 if empty(glob('~/.vim/autoload/plug.vim'))
 silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -117,18 +123,28 @@ call plug#begin('~/.vim/plugged')
   Plug 'psliwka/vim-smoothie'
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+  Plug 'junegunn/goyo.vim'
+  Plug 'junegunn/limelight.vim'
 call plug#end()
+
 set termguicolors
 set background=dark
+
 colorscheme deep-space
 let g:lightline = {
   \ 'colorscheme': 'deep_space',
   \ }
 let g:airline_theme='deep_space'
+
 nnoremap <C-n> :NERDTreeToggle<CR>
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
+map <F9> :Goyo <bar> <CR>
+map <F8> :Limelight! <bar> <CR>
+map <F7> :Limelight <bar> <CR>
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
