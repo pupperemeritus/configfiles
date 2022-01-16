@@ -151,6 +151,8 @@ map <F10> :Terminal bash <CR>
 map <F11> :TagbarToggle <CR>
 map <F12> :MarkdownPreviewToggle <CR>
 
+let vim_markdown_preview_github=1
+
 " sets foreground color (ANSI, true-color mode)
 let &t_8f = "\e[38;2;%lu;%lu;%lum"
 
