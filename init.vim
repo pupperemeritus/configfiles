@@ -1,7 +1,7 @@
-" An example for a vimrc file.
+" An example for a init.vim file.
 "
 " Maintainer:   pupperemeritus
-" Last change:  2021 Dec 26
+" Last change:  2022 Jan 16
 "
 " To use it, copy it to
 "              for Unix:  ~/.vimrc
@@ -121,11 +121,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
   Plug 'junegunn/goyo.vim'
   Plug 'junegunn/limelight.vim'
-  Plug 'BourgeoisBear/clrzr'
   Plug 'tc50cal/vim-terminal'
   Plug 'ryanoasis/vim-devicons'
   Plug 'bagrat/vim-buffet'
   Plug 'preservim/tagbar'
+  Plug 'lilydjwg/colorizer'
 call plug#end()
 
 set termguicolors
@@ -161,3 +161,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" Coc extensions - coc-prettier,coc-pyright,coc-pydocstring,coc-tabnine
+command! -nargs=0 Prettier :CocCommand prettier.formatFile

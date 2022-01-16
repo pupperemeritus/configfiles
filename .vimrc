@@ -1,7 +1,7 @@
 " An example for a vimrc file.
 "
 " Maintainer:   pupperemeritus
-" Last change:  2021 Dec 26
+" Last change:  202 Jan 16
 "
 " To use it, copy it to
 "              for Unix:  ~/.vimrc
@@ -126,21 +126,21 @@ call plug#begin('~/.vim/plugged')
   Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
   Plug 'junegunn/goyo.vim'
   Plug 'junegunn/limelight.vim'
-  Plug 'BourgeoisBear/clrzr'
   Plug 'tc50cal/vim-terminal'
   Plug 'ryanoasis/vim-devicons'
   Plug 'bagrat/vim-buffet'
   Plug 'preservim/tagbar'
+  Plug 'lilydjwg/colorizer'
 call plug#end()
 
 set termguicolors
 set background=dark
 
-colorscheme deep-space
+colorscheme onedark
 let g:lightline = {
-  \ 'colorscheme': 'deep_space',
+  \ 'colorscheme': 'onedark',
   \ }
-let g:airline_theme='deep_space'
+let g:airline_theme='onedark'
 
 nnoremap <C-n> :NERDTreeToggle<CR>
 
@@ -167,3 +167,5 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" Coc extensions - coc-prettier,coc-pyright,coc-pydocstring,coc-tabnine
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
