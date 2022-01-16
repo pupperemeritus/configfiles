@@ -142,7 +142,7 @@ let g:lightline = {
   \ }
 let g:airline_theme='onedark'
 
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <F12> :NERDTreeToggle<CR>
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -160,7 +160,8 @@ map <F9> :Goyo <bar> <CR>
 map <F8> :Limelight! <bar> <CR>
 map <F7> :Limelight <bar> <CR>
 map <F10> :Terminal bash<CR>
-map <F11> :TagbarToggle <bar> <CR>
+map <F11> :TagbarToggle <CR>
+map <F12> :MarkdownPreviewToggle <CR>
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1

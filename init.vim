@@ -137,7 +137,7 @@ let g:lightline = {
   \ }
 let g:airline_theme='deep_space'
 
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <F12> :NERDTreeToggle<CR>
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -146,8 +146,9 @@ set statusline+=%*
 map <F9> :Goyo <bar> <CR>
 map <F8> :Limelight! <bar> <CR>
 map <F7> :Limelight <bar> <CR>
-map <F10> :TerminalSplit bash <bar> <CR>
-map <F11> :TagbarToggle <bar> <CR>
+map <F10> :Terminal bash <CR>
+map <F11> :TagbarToggle <CR>
+map <F12> :MarkdownPreviewToggle <CR>
 
 " sets foreground color (ANSI, true-color mode)
 let &t_8f = "\e[38;2;%lu;%lu;%lum"
