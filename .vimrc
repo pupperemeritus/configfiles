@@ -1,7 +1,7 @@
 " An example for a vimrc file.
 "
 " Maintainer:   pupperemeritus
-" Last change:  202 Jan 16
+" Last change:  2022 Jan 16
 "
 " To use it, copy it to
 "              for Unix:  ~/.vimrc
