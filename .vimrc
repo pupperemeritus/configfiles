@@ -126,6 +126,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
   Plug 'junegunn/goyo.vim'
   Plug 'junegunn/limelight.vim'
+  Plug 'BourgeoisBear/clrzr'
+  Plug 'tc50cal/vim-terminal'
+  Plug 'ryanoasis/vim-devicons'
+  Plug 'bagrat/vim-buffet'
+  Plug 'preservim/tagbar'
 call plug#end()
 
 set termguicolors
@@ -146,6 +151,8 @@ set statusline+=%*
 map <F9> :Goyo <bar> <CR>
 map <F8> :Limelight! <bar> <CR>
 map <F7> :Limelight <bar> <CR>
+map <F10> :TerminalSplit bash <bar> <CR>
+map <F11> :TagbarToggle <bar> <CR>
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
