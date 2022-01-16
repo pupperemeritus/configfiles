@@ -17,7 +17,6 @@ if v:progname =~? "evim"
 endif
 
 " Get the defaults that most users want.
-source $VIMRUNTIME/defaults.vim
 
 if has("vms")
   set nobackup          " do not keep a backup file, use versions instead
@@ -91,10 +90,6 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set autochdir
 set nocompatible
 
-if empty(glob('~/.vim/autoload/plug.vim'))
-silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-endif
 
 autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \| PlugInstall --sync | source $MYVIMRC
@@ -118,9 +113,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'xavierd/clang_complete'
   Plug 'sheerun/vim-polyglot'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'tpope/vim-commentary'
   Plug 'danilo-augusto/vim-afterglow'
   Plug 'tyrannicaltoucan/vim-deep-space'
-  Plug 'tpope/vim-commentary'
   Plug 'psliwka/vim-smoothie'
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
@@ -151,4 +146,3 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
