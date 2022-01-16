@@ -149,6 +149,14 @@ map <F7> :Limelight <bar> <CR>
 map <F10> :TerminalSplit bash <bar> <CR>
 map <F11> :TagbarToggle <bar> <CR>
 
+" sets foreground color (ANSI, true-color mode)
+let &t_8f = "\e[38;2;%lu;%lu;%lum"
+
+" sets background color (ANSI, true-color mode)
+let &t_8b = "\e[48;2;%lu;%lu;%lum"
+
+set termguicolors
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1

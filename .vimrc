@@ -148,10 +148,18 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+" sets foreground color (ANSI, true-color mode)
+let &t_8f = "\e[38;2;%lu;%lu;%lum"
+
+" sets background color (ANSI, true-color mode)
+let &t_8b = "\e[48;2;%lu;%lu;%lum"
+
+set termguicolors
+
 map <F9> :Goyo <bar> <CR>
 map <F8> :Limelight! <bar> <CR>
 map <F7> :Limelight <bar> <CR>
-map <F10> :TerminalSplit bash <bar> <CR>
+map <F10> :Terminal bash<CR>
 map <F11> :TagbarToggle <bar> <CR>
 
 let g:syntastic_always_populate_loc_list = 1
