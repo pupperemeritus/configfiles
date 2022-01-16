@@ -131,6 +131,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'bagrat/vim-buffet'
   Plug 'preservim/tagbar'
   Plug 'lilydjwg/colorizer'
+  Plug 'jtratner/vim-flavored-markdown'
 call plug#end()
 
 set termguicolors
