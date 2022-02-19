@@ -5,18 +5,30 @@ local set = vim.opt
 local config = {
 
   -- Set colorscheme
-  colorscheme = "deep-space",
+  colorscheme = "afterglow",
 
   -- Add plugins
   plugins = {
-     { "andweeb/presence.nvim" },
-     {
-       "ray-x/lsp_signature.nvim",
-       event = "BufRead",
-       config = function()
-         require("lsp_signature").setup()
-       end,
-     },
+    {"andweeb/presence.nvim"},
+    {
+      "ray-x/lsp_signature.nvim",
+      event = "BufRead",
+      config = function()
+      require("lsp_signature").setup()
+      end
+    },
+    {
+      "farmergreg/vim-lastplace",
+      "junegunn/limelight.vim",
+      "junegunn/goyo.vim",
+      "tyrannicaltoucan/vim-deep-space",
+      "danilo-augusto/vim-afterglow",
+    }
+  },
+  overrides = {
+    treesitter = {
+      ensure_installed = { "lua" },
+    },
   },
 
   -- On/off virtual diagnostics text
@@ -24,6 +36,7 @@ local config = {
 
   -- Disable default plugins
   enabled = {
+    bufferline = true,
     nvim_tree = true,
     lualine = true,
     lspsaga = true,
@@ -42,11 +55,20 @@ local config = {
 }
 
 -- Set options
-set.relativenumber = false
-set.termguicolors = true
+set.relativenumber = true
+set.timeoutlen = 100
+set.hidden = false
+set.smarttab = true
+set.expandtab  = true
+set.nocompatible = true
+set.timeoutlen = 100
+set.hidden = false
 
 -- Set key bindings
 map("n", "<C-s>", ":w!<CR>", opts)
+map("n", "<F9>",":Goyo <bar> <CR>",opts)
+map("n", "<F8>", ":Limelight! <bar> <CR>",opts)
+map("n", "<F7>", ":Limelight <bar> <CR>",opts)
 
 -- Set autocommands
 vim.cmd [[
