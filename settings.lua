@@ -5,7 +5,7 @@ local set = vim.opt
 local config = {
 
   -- Set colorscheme
-  colorscheme = "afterglow",
+  colorscheme = "nord-light-brighter",
 
   -- Add plugins
   plugins = {
@@ -22,12 +22,13 @@ local config = {
       "junegunn/goyo.vim",
       "tyrannicaltoucan/vim-deep-space",
       "danilo-augusto/vim-afterglow",
+      "huytd/vim-nord-light-brighter",
     },
   },
 
   overrides = {
     treesitter = {
-      ensure_installed = { "lua" },
+      ensure_installed = { "lua","c","cpp","python","json","haskell","javascript","typescript","go","css" },
     },
   },
 
@@ -61,7 +62,11 @@ set.hidden = false
 set.smarttab = true
 set.expandtab  = true
 
-
+-- language servers
+-- "pyright","pylsp","jsonls","html",
+-- "kotlin_language_server","cssls","clangd",
+-- "remark_ls","rome","sqlls","sumneko_lua",
+-- "jdtls","hls","gopls","rust_analyzer"
 -- Set key bindings
 map("n", "<C-s>", ":w!<CR>", opts)
 map("n", "<F9>",":Goyo <bar> <CR>",opts)
