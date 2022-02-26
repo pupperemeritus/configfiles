@@ -26,12 +26,14 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+fortune|cowsay|lolcat
+
 
 ##-----------------------------------------------------
 ## synth-shell-greeter.sh
-if [ -f /home/pupperemeritus/.config/synth-shell/synth-shell-greeter.sh ] && [ -n "$( echo $- | grep i )" ]; then
-	source /home/pupperemeritus/.config/synth-shell/synth-shell-greeter.sh
-fi
+#if [ -f /home/pupperemeritus/.config/synth-shell/synth-shell-greeter.sh ] && [ -n "$( echo $- | grep i )" ]; then
+#	source /home/pupperemeritus/.config/synth-shell/synth-shell-greeter.sh
+#fi
 
 ##-----------------------------------------------------
 ## synth-shell-prompt.sh
@@ -84,7 +86,6 @@ alias helpme='cht.sh --shell'
 alias please='sudo'
 alias tb='nc termbin.com 9999'
 alias spyderconda='conda activate spyder-env && spyder'
-alias cambright='v142-ctl -d /dev/video0 --set-ctrl=brightness='
-# Cleanup orphaned packages
+# Cleanup orphanet packages
 alias cleanup='sudo pacman -Rns `pacman -Qtdq`'
-
+alias cambright='v412-ctl -d /dev/video0 --set-ctrl=brightness'
