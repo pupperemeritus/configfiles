@@ -24,6 +24,7 @@ local config = {
       "danilo-augusto/vim-afterglow",
       "huytd/vim-nord-light-brighter",
     },
+    {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'},
   },
 
   overrides = {
@@ -80,4 +81,16 @@ vim.cmd [[
   augroup end
 ]]
 
+local tabnine = require('cmp_tabnine.config')
+tabnine:setup({
+	max_lines = 1000;
+	max_num_results = 20;
+	sort = true;
+	run_on_every_keystroke = true;
+	snippet_placeholder = '..';
+	ignored_file_types = { -- default is not to ignore
+		-- uncomment to ignore in lua:
+		-- lua = true
+	};
+})
 return config
