@@ -133,6 +133,7 @@ end
 ## Run paleofetch if session is interactive
 if status --is-interactive
    neofetch
+   fortune|cowsay|lolcat
 end
 
 # >>> conda initialize >>>
