@@ -16,3 +16,4 @@ Configs include
 1. Tabby
 1. Starship
 1. Zsh
+1. Latte dock
